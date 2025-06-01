@@ -23,7 +23,7 @@ class WhisperAudioToSRTText:
     FUNCTION = "transcribe"
     CATEGORY = "WhisperSRT"
 
-    def transcribe(self, audio):
+    def transcribe(self, audio, model):
 
         temp_dir = folder_paths.get_temp_directory()
         os.makedirs(temp_dir, exist_ok=True)
@@ -33,8 +33,8 @@ class WhisperAudioToSRTText:
       
         print(f"[Whisper Node] Transcribing temporary .wav file: {audio_save_path}")
         print("[Whisper Node] Loading Whisper model...")
-        model = whisper.load_model(model)
-        result = model.transcribe(audio_save_path, word_timestamps=True)
+        w_model = whisper.load_model(model)
+        result = w_model.transcribe(audio_save_path, word_timestamps=True)
 
         segments = result["segments"]
         full_text = result["text"]
