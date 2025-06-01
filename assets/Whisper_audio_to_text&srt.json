@@ -1,0 +1,280 @@
+{
+  "id": "60ecb9e0-3ce1-45d3-8bd3-6d107df732d6",
+  "revision": 0,
+  "last_node_id": 7,
+  "last_link_id": 6,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "WhisperAudioToSRTText",
+      "pos": [
+        507.9146728515625,
+        141.2871856689453
+      ],
+      "size": [
+        291.2173767089844,
+        78
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "transcribed_text",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "srt_text",
+          "type": "STRING",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WhisperAudioToSRTText",
+        "aux_id": "bikiam/ComfyUI_WhisperSRT",
+        "ver": "637ff3e293374ccd22049ab4ccd13f5531146dc3",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "base"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1280.136474609375,
+        192.568115234375
+      ],
+      "size": [
+        382.8800354003906,
+        434.320068359375
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss",
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "aac13aa7ce35b07d43633c3bbe654a38c00d74f5",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "1\n00:00:00,000 --> 00:00:06,139\na lot in my film industry. I've been working hard since last 28 years now. I've finished about\n\n2\n00:00:09,559 --> 00:00:19,559\n130 films and I've now become a producer since last 10 years. I've been producing films like\n\n3\n00:00:19,559 --> 00:00:30,260\nWakt, Namasteel London, Slinges King, L.F.D. Baby, Special Chabbis, and so on and even Pat Man also.\n\n4\n00:00:31,839 --> 00:00:40,179\nI always wanted to bring, you know, the most important thing of my life has been that I wanted a change\n\n5\n00:00:40,179 --> 00:00:48,000\nevery time anybody tries to put an image on me. I have always jumped to some other image. I never\n\n6\n00:00:48,000 --> 00:00:55,039\nwanted to be in one track because I always think a change is the most important thing in anybody's\n\n7\n00:00:55,039 --> 00:01:02,240\nlife because if the person can change himself, he...",
+        "1\n00:00:00,000 --> 00:00:06,139\na lot in my film industry. I've been working hard since last 28 years now. I've finished about\n\n2\n00:00:09,559 --> 00:00:19,559\n130 films and I've now become a producer since last 10 years. I've been producing films like\n\n3\n00:00:19,559 --> 00:00:30,260\nWakt, Namasteel London, Slinges King, L.F.D. Baby, Special Chabbis, and so on and even Pat Man also.\n\n4\n00:00:31,839 --> 00:00:40,179\nI always wanted to bring, you know, the most important thing of my life has been that I wanted a change\n\n5\n00:00:40,179 --> 00:00:48,000\nevery time anybody tries to put an image on me. I have always jumped to some other image. I never\n\n6\n00:00:48,000 --> 00:00:55,039\nwanted to be in one track because I always think a change is the most important thing in anybody's\n\n7\n00:00:55,039 --> 00:01:02,240\nlife because if the person can change himself, he..."
+      ]
+    },
+    {
+      "id": 2,
+      "type": "LoadAudio",
+      "pos": [
+        181.5999755859375,
+        140.1999969482422
+      ],
+      "size": [
+        280.8561096191406,
+        136
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "AUDIO",
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadAudio",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.39",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "AKSHAY KUMAR En.wav",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 3,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1089.13330078125,
+        -62.32476806640625
+      ],
+      "size": [
+        439.5199279785156,
+        172.3999786376953
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss",
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "aac13aa7ce35b07d43633c3bbe654a38c00d74f5",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "a lot in my film industry. I've been working hard since last 28 years now. I've finished about 130 films and I've now become a producer since last 10 years. I've been producing films like Wakt, Namasteel London, Slinges King, L.F.D. Baby, Special Chabbis, and so on and even Pat Man also. I always wanted to bring, you know, the most important thing of my life has been that I wanted a change every time anybody tries to put an image on me. I have always jumped to some other image. I never wanted to be in one track because I always think a change is the most important thing in anybody's life because if the person can change himself, he...",
+        "a lot in my film industry. I've been working hard since last 28 years now. I've finished about 130 films and I've now become a producer since last 10 years. I've been producing films like Wakt, Namasteel London, Slinges King, L.F.D. Baby, Special Chabbis, and so on and even Pat Man also. I always wanted to bring, you know, the most important thing of my life has been that I wanted a change every time anybody tries to put an image on me. I have always jumped to some other image. I never wanted to be in one track because I always think a change is the most important thing in anybody's life because if the person can change himself, he..."
+      ]
+    },
+    {
+      "id": 5,
+      "type": "SaveText|pysssss",
+      "pos": [
+        940.819580078125,
+        216.6159210205078
+      ],
+      "size": [
+        282.800048828125,
+        184
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveText|pysssss",
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "aac13aa7ce35b07d43633c3bbe654a38c00d74f5",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "output",
+        "outputfile1.srt",
+        "overwrite",
+        true,
+        ""
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      2,
+      0,
+      1,
+      0,
+      "AUDIO"
+    ],
+    [
+      2,
+      1,
+      0,
+      3,
+      0,
+      "STRING"
+    ],
+    [
+      4,
+      1,
+      1,
+      5,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      5,
+      0,
+      7,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8769226950000008,
+      "offset": [
+        -109.76926320443627,
+        112.99576921485736
+      ]
+    },
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "frontendVersion": "1.21.3",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "0246.VERSION": [
+      0,
+      0,
+      4
+    ]
+  },
+  "version": 0.4
+}
