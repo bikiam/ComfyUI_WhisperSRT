@@ -21,7 +21,7 @@ class WhisperAudioToSRTText:
     RETURN_TYPES = ("STRING", "STRING")
     RETURN_NAMES = ("transcribed_text", "srt_text")
     FUNCTION = "transcribe"
-    CATEGORY = "Audio"
+    CATEGORY = "WhisperSRT"
 
     def transcribe(self, audio):
 
