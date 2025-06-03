@@ -1,0 +1,16 @@
+[project]
+name = "whispersrt"
+description = "This is custom node for audio transcribe with SRT."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["openai-whisper", "pillow", "uuid"]
+
+[project.urls]
+Repository = "https://github.com/bikiam/ComfyUI_WhisperSRT"
+#  Used by Comfy Registry https://registry.comfy.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI_WhisperSRT"
+Icon = ""
+includes = []
